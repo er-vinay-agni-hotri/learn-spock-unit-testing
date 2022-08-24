@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!build.gradle
+!settings.gradle
+!src/
+!gradlew
+!gradlew.bat
+!gradle/
+!*.groovy
+!lombok.config
+!README.md
+!CODEOWNERS

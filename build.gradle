@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'jacoco'
+}
+group='com.my'
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+repositories {
+    mavenCentral()
+}
+test {
+    useJUnitPlatform()
+}
+dependencies {
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation "org.codehaus.groovy:groovy-all:3.0.7"
+    testImplementation platform("org.spockframework:spock-bom:2.0-M5-groovy-3.0")
+    testImplementation "org.spockframework:spock-core"
+}
